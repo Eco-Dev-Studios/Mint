@@ -2,6 +2,14 @@
 
 To facilitate the creation of landing pages, one pages or portfolios, this project gives us the necessary configuration tools to start a project without much need.
 
+## Tools
+
+- [NuxtJS](https://nuxtjs.org).
+- [Vite](https://vitejs.dev/).
+- [Vite Nuxt Plugin](https://vite.nuxtjs.org/).
+- [WindiCSS](https://windicss.org/).
+- [PWA](https://pwa.nuxtjs.org/).
+
 All you have to do is download this repo and follow the commands below:
 
 ## Build Setup
