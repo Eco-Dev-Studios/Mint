@@ -1,4 +1,8 @@
-# base-nuxt-windicss-vite-v2
+# Landing Page Template by Eco Development Studios
+
+To facilitate the creation of landing pages, one pages or portfolios, this project gives us the necessary configuration tools to start a project without much need.
+
+All you have to do is download this repo and follow the commands below:
 
 ## Build Setup
 
