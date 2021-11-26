@@ -1,0 +1,29 @@
+{
+  "name": "base-nuxt-windicss-vite-v2",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Base proyect",
+  "author": {
+    "name": "Céss White",
+    "email": "ecodevcontact@gmail.com",
+    "url": "https://cess-white.netlify.app/"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.15.8"
+  },
+  "devDependencies": {
+    "@babel/core": "7.13.15",
+    "@babel/preset-env": "7.13.15",
+    "@nuxtjs/color-mode": "^2.1.1",
+    "@nuxtjs/pwa": "^3.3.5",
+    "core-js": "^3.12.0",
+    "nuxt-vite": "^0.3.5",
+    "nuxt-windicss": "^2.0.12"
+  }
+}
