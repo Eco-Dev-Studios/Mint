@@ -6,9 +6,14 @@ To facilitate the creation of landing pages, one pages or portfolios, this proje
 
 - [NuxtJS](https://nuxtjs.org).
 - [Vite](https://vitejs.dev/).
-- [Vite Nuxt Plugin](https://vite.nuxtjs.org/).
 - [WindiCSS](https://windicss.org/).
-- [PWA](https://pwa.nuxtjs.org/).
+
+## Plugins
+
+- ⚡️ [Vite Nuxt Plugin](https://vite.nuxtjs.org/).
+- 📲 [PWA](https://pwa.nuxtjs.org/).
+- 🌑 [Dark Mode](https://color-mode.nuxtjs.org/).
+- 🎨 [Styled by WindiCSS](https://github.com/windicss/nuxt-windicss).
 
 All you have to do is download this repo and follow the commands below:
 

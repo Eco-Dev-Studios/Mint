@@ -1,10 +1,10 @@
 <template>
-  <div id="switchModeContainer">
-    <button class="py-2 px-3" aria-label="switch-mode" @click="setMode">
+  <div id="switchModeContainer" class="w-auto">
+    <button class="p-3" aria-label="switch-mode" @click="setMode">
       <svg
         v-if="$colorMode.preference === 'dark'"
         :class="setSize"
-        fill="currentColor"
+        class="fill-current text-gray-50 w-6 h-6"
         viewBox="0 0 20 20"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -17,7 +17,7 @@
       <svg
         v-else
         :class="setSize"
-        fill="currentColor"
+        class="fill-current text-gray-800 w-6 h-6"
         viewBox="0 0 20 20"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -34,27 +34,27 @@ export default {
   props: {
     wSize: {
       type: String,
-      default: '6'
+      default: "6",
     },
     hSize: {
       type: String,
-      default: '6'
-    }
+      default: "6",
+    },
   },
   computed: {
     setSize() {
       return `w-${this.wSize} h-${this.hSize}`;
-    }
+    },
   },
   methods: {
     setMode() {
-      if (this.$colorMode.preference === 'dark') {
-        this.$colorMode.preference = 'light';
+      if (this.$colorMode.preference === "dark") {
+        this.$colorMode.preference = "light";
       } else {
-        this.$colorMode.preference = 'dark';
+        this.$colorMode.preference = "dark";
       }
-      this.$store.commit('colorMode/setMode', this.$colorMode.preference);
-    }
-  }
+      this.$store.commit("colorMode/setMode", this.$colorMode.preference);
+    },
+  },
 };
 </script>

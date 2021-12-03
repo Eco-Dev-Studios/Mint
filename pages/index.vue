@@ -1,58 +1,42 @@
 <template>
-  <div id="appContainer" class="w-full h-full">
-    <!-- <div class="fixed top-0">
-      {{ getScroll }}
-    </div> -->
+  <div>
+    <div id="appContainer" class="w-full h-screen flex relative">
+      <div class="center-x-y">
+        <a href="#section1">Go to section 1</a> <br />
+        <a href="#section1">Go to section 2</a>
+        <div class="w-12 h-12 mx-auto">
+          <switch-mode />
+        </div>
+      </div>
+      <div
+        class="h-screen w-1/2 bg-true-gray-800 flex items-center justify-center dark:bg-gray-900"
+        :style="{ transform: ` translateX(-${getScroll}px)` }"
+      >
+        <h1 class="font-bold text-10xl text-gray-800 font-sans text-gray-50">
+          <Logo />
+        </h1>
+      </div>
+      <div
+        class="h-screen w-1/2 bg-true-gray-800 flex items-center justify-center dark:bg-gray-900"
+        :style="{ transform: ` translateX(${getScroll}px)` }"
+      >
+        <p class="font-normal text-normal text-gray-800 font-sans text-gray-50">
+          Landing Page Template by Eco Development Studios
+        </p>
+      </div>
+    </div>
     <div
-      id="appContentLayout"
-      class="max-w-screen-xl h-screen mx-auto flex flex-col items-center justify-center"
+      class="h-screen bg-true-gray-800 w-full flex flex-col items-center justify-center text-gray-50"
+      id="section1"
     >
-      <div class="flex justify-center items-center mb-10">
-        <Logo /> <span class="mr-4"></span
-        ><switch-mode w-size="10" h-size="10" />
-      </div>
-      <!-- <h1 class="text-xl text-green-800 dark:text-green-400">
-        This is a base proyect built with 🔥
-      </h1> -->
-
-      <a href="#test">Test</a>
-      <a href="#test2">Test2</a>
-
-      <div class="w-1/2 flex mx-auto justify-evenly transform">
-        <!-- <a href="https://nuxtjs.org/" target="_blank">
-          <img
-            :src="`/logos/${getMode}`"
-            alt="nuxtjs"
-            width="80"
-            height="80"
-            :style="{ transform: ` translateX(-${getScroll}px)` }"
-          />
-        </a> -->
-        <div :style="{ transform: ` translateX(-${getScroll}px)` }">
-          <h1 class="font-bold text-10xl text-gray-800 font-sans">Cess</h1>
-        </div>
-        <a href="https://windicss.org/" target="_blank">
-          <img src="/logos/windicss-logo.svg" alt="" width="80" height="80" />
-        </a>
-        <div :style="{ transform: ` translateX(${getScroll}px)` }">
-          <h1 class="font-bold text-10xl text-gray-800 font-sans">White</h1>
-        </div>
-        <!-- <a href="https://vitejs.dev/" target="_blank">
-          <img
-            src="/logos/vite-logo.svg"
-            alt=""
-            width="80"
-            height="80"
-            :style="{ transform: ` translateX(${getScroll}px)` }"
-          />
-        </a> -->
-      </div>
+      <a href="#appContainer">Go to Home ☝🏻</a>
+      <a href="#section2">Go to down 👇🏻</a>
     </div>
-    <div class="h-screen ? w-full" id="test">
-      <a href="#appContentLayout">Go to Home</a>
-    </div>
-    <div class="h-screen ? w-full" id="test2">
-      <a href="#test">Go to Test</a>
+    <div
+      class="h-screen bg-true-gray-800 w-full flex items-center justify-center text-gray-50"
+      id="section2"
+    >
+      <a href="#section1">Go to Up ☝🏻</a>
     </div>
   </div>
 </template>
