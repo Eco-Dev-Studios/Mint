@@ -52,7 +52,7 @@ export default {
     handleScroll(event) {
       this.scrollY = window.scrollY;
       this.$store.commit("scroll/setPosition", window.scrollY);
-      this.$store.commit("scroll/isInViewport", "section1");
+      this.$store.commit("scroll/isInViewport", "section2");
     },
   },
   computed: {
