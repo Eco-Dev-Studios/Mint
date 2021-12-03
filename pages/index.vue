@@ -12,9 +12,8 @@
         class="h-screen w-1/2 bg-true-gray-800 flex items-center justify-center dark:bg-gray-900"
         :style="{ transform: ` translateX(-${getScroll}px)` }"
       >
-        <h1 class="font-bold text-10xl text-gray-800 font-sans text-gray-50">
-          <Logo />
-        </h1>
+        <Logo />
+        {{ isInViewport }}
       </div>
       <div
         class="h-screen w-1/2 bg-true-gray-800 flex items-center justify-center dark:bg-gray-900"
@@ -53,6 +52,7 @@ export default {
     handleScroll(event) {
       this.scrollY = window.scrollY;
       this.$store.commit("scroll/setPosition", window.scrollY);
+      this.$store.commit("scroll/isInViewport", "section1");
     },
   },
   computed: {
@@ -68,6 +68,9 @@ export default {
     },
     getScroll() {
       return this.$store.state.scroll.scrollY;
+    },
+    isInViewport() {
+      return this.$store.state.scroll.isInViewport;
     },
   },
   head: {

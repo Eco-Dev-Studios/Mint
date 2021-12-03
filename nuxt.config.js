@@ -19,8 +19,8 @@ export default {
   components: true,
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    "nuxt-windicss",
     "nuxt-vite",
+    "nuxt-windicss",
     "@nuxtjs/color-mode",
     "@nuxtjs/pwa",
   ],
