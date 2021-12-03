@@ -7,6 +7,8 @@ To facilitate the creation of landing pages, one pages or portfolios, this proje
 - [NuxtJS](https://nuxtjs.org).
 - [Vite](https://vitejs.dev/).
 - [WindiCSS](https://windicss.org/).
+- [Animatecss](https://animate.style/).
+- [Custom CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/).
 
 ## Plugins
 
@@ -14,6 +16,7 @@ To facilitate the creation of landing pages, one pages or portfolios, this proje
 - 📲 [PWA](https://pwa.nuxtjs.org/).
 - 🌑 [Dark Mode](https://color-mode.nuxtjs.org/).
 - 🎨 [Styled by WindiCSS](https://github.com/windicss/nuxt-windicss).
+- [Animatecss](https://windicss.org/plugins/community/animations.html).
 
 All you have to do is download this repo and follow the commands below:
 

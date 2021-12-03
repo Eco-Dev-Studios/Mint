@@ -1,42 +1,59 @@
 <template>
-  <div>
-    <div id="appContainer" class="w-full h-screen flex relative">
-      <div class="center-x-y">
-        <a href="#section1">Go to section 1</a> <br />
-        <a href="#section1">Go to section 2</a>
-        <div class="w-12 h-12 mx-auto">
-          <switch-mode />
+  <div class="h-auto w-full">
+    <!--Header-->
+    <header
+      id="header"
+      class="h-auto bg-true-gray-900 bg-opacity-10 w-full py-4 fixed backdrop-filter backdrop-blur-md"
+    >
+      <Layout size="xl" class="grid gap-10 grid-cols-2 items-center">
+        <div>
+          <Logo />
         </div>
-      </div>
-      <div
-        class="h-screen w-1/2 bg-true-gray-800 flex items-center justify-center dark:bg-gray-900"
-        :style="{ transform: ` translateX(-${getScroll}px)` }"
-      >
-        <Logo />
-        {{ isInViewport }}
-      </div>
-      <div
-        class="h-screen w-1/2 bg-true-gray-800 flex items-center justify-center dark:bg-gray-900"
-        :style="{ transform: ` translateX(${getScroll}px)` }"
-      >
-        <p class="font-normal text-normal text-gray-800 font-sans text-gray-50">
-          Landing Page Template by Eco Development Studios
-        </p>
-      </div>
-    </div>
-    <div
-      class="h-screen bg-true-gray-800 w-full flex flex-col items-center justify-center text-gray-50"
-      id="section1"
-    >
-      <a href="#appContainer">Go to Home ☝🏻</a>
-      <a href="#section2">Go to down 👇🏻</a>
-    </div>
-    <div
-      class="h-screen bg-true-gray-800 w-full flex items-center justify-center text-gray-50"
-      id="section2"
-    >
-      <a href="#section1">Go to Up ☝🏻</a>
-    </div>
+        <nav class="grid gap-4 grid-cols-4">
+          <a
+            href=""
+            class="font-semibold text-center text-lg text-gray-800 no-underline"
+            >Home</a
+          >
+          <a
+            href=""
+            class="font-semibold text-center text-lg text-gray-800 no-underline"
+            >About</a
+          >
+          <a
+            href=""
+            class="font-semibold text-center text-lg text-gray-800 no-underline"
+            >Works</a
+          >
+          <a
+            href=""
+            class="font-semibold text-center text-lg text-gray-800 no-underline"
+            >Contact</a
+          >
+        </nav>
+      </Layout>
+    </header>
+    <!--Index-->
+    <Layout size="xl" class="pt-18">
+      <main class="h-screen w-full relative">
+        <div class="animate-animated animate-fade-in w-1/2 center-y">
+          <h1 class="font-bold font-sans mb-4 text-7xl text-gray-900">
+            Landing Page <br />
+            Template
+          </h1>
+          <p
+            class="font-sans font-semibold text-xl text-gray-900 text-opacity-70"
+          >
+            To facilitate the creation of landing pages, one pages or
+            portfolios, this project gives us the necessary configuration tools
+            to start a project without much need.
+          </p>
+          <small class="font-semibold text-gray-900"
+            >By Eco Development Studios</small
+          >
+        </div>
+      </main>
+    </Layout>
   </div>
 </template>
 

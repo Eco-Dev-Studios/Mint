@@ -22,6 +22,7 @@
     "@babel/preset-env": "7.13.15",
     "@nuxtjs/color-mode": "^2.1.1",
     "@nuxtjs/pwa": "^3.3.5",
+    "@windicss/plugin-animations": "^1.0.9",
     "core-js": "^3.12.0",
     "nuxt-vite": "^0.3.5",
     "nuxt-windicss": "^2.0.12"

@@ -15,6 +15,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ["@/assets/main.css"],
+  loading: { color: "#3B8070" },
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
@@ -22,12 +23,6 @@ export default {
     "nuxt-vite",
     "nuxt-windicss",
     "@nuxtjs/color-mode",
-    "@nuxtjs/pwa",
-  ],
-
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    // https://go.nuxtjs.dev/pwa
     "@nuxtjs/pwa",
   ],
   windicss: {
