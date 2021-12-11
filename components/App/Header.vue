@@ -8,26 +8,10 @@
         <app-logo />
       </div>
       <nav class="grid gap-4 grid-cols-4">
-        <a
-          href=""
-          class="font-semibold text-center text-lg text-gray-800 no-underline"
-          >Home</a
-        >
-        <a
-          href=""
-          class="font-semibold text-center text-lg text-gray-800 no-underline"
-          >About</a
-        >
-        <a
-          href=""
-          class="font-semibold text-center text-lg text-gray-800 no-underline"
-          >Works</a
-        >
-        <a
-          href=""
-          class="font-semibold text-center text-lg text-gray-800 no-underline"
-          >Contact</a
-        >
+        <a href="" class="link">Home</a>
+        <a href="" class="link">About</a>
+        <a href="" class="link">Works</a>
+        <a href="" class="link">Contact</a>
       </nav>
     </app-layout>
   </header>
