@@ -1,5 +1,5 @@
 <template>
-  <div class="h-auto w-full">
+  <div id="index" class="h-auto w-full">
     <!--Index-->
     <app-layout size="xl" class="pt-18">
       <main class="h-screen w-full relative">
@@ -26,6 +26,7 @@
           >
         </div>
       </main>
+      <example-section />
     </app-layout>
   </div>
 </template>
@@ -39,7 +40,7 @@ export default {
     handleScroll(event) {
       this.scrollY = window.scrollY;
       this.$store.commit("scroll/setPosition", window.scrollY);
-      this.$store.commit("scroll/isInViewport", "section2");
+      // this.$store.commit("scroll/isInViewport", "section2");
     },
   },
   computed: {

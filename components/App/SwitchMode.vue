@@ -1,10 +1,10 @@
 <template>
-  <div id="switchModeContainer" class="w-auto">
+  <div id="switchModeContainer" class="mx-auto w-auto">
     <button class="p-3" aria-label="switch-mode" @click="setMode">
       <svg
         v-if="$colorMode.preference === 'dark'"
         :class="setSize"
-        class="fill-current text-gray-50 w-6 h-6"
+        class="h-6 fill-current text-gray-50 w-6"
         viewBox="0 0 20 20"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -17,7 +17,7 @@
       <svg
         v-else
         :class="setSize"
-        class="fill-current text-gray-800 w-6 h-6"
+        class="h-6 fill-current text-gray-800 w-6"
         viewBox="0 0 20 20"
         xmlns="http://www.w3.org/2000/svg"
       >

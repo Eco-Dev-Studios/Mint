@@ -39,11 +39,13 @@ svg {
   display: block;
   max-width: 100%;
 }
-input,
+button {
+  cursor: pointer;
+}
 button,
-textarea,
-select {
-  font: inherit;
+input {
+  background: none;
+  border: none;
 }
 p,
 h1,
