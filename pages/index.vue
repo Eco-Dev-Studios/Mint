@@ -16,13 +16,13 @@
             To facilitate the creation of landing pages, one pages or
             portfolios, this project gives us the necessary configuration tools
             to start a project without much need.
-            <br />
-            <nuxt-link to="test" class="mt-4 link underline inline-block"
-              >Go to test page</nuxt-link
-            >
           </p>
-          <small class="font-semibold text-gray-900"
+          <small class="font-semibold text-gray-900 dark:text-gray-50"
             >By Eco Development Studios</small
+          >
+          <br />
+          <nuxt-link to="test" class="mt-4 link underline inline-block"
+            >Go to test page</nuxt-link
           >
         </div>
       </main>
@@ -66,7 +66,7 @@ export default {
       {
         hid: "home",
         name: "home",
-        content: "We are a studio that design and develop to the web",
+        content: "Mint - Starter template for landing pages",
       },
     ],
   },

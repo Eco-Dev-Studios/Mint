@@ -10,5 +10,16 @@
 </template>
 
 <script>
-export default {};
+export default {
+  head: {
+    title: "Test Page",
+    meta: [
+      {
+        hid: "test",
+        name: "test",
+        content: "This is a test page",
+      },
+    ],
+  },
+};
 </script>
