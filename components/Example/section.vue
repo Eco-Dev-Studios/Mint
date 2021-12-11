@@ -10,7 +10,7 @@
       <div
         id="example"
         class="bg-cover bg-center rounded-lg bg-image-3 animate-delay col-end-7 col-span-2 row-span-12 animate-delay-150 animated"
-        :class="{ 'animate-bubble': isInViewport }"
+        :class="{ 'animate-head-shake': isInViewport }"
       ></div>
       <div
         class="bg-cover bg-center rounded-lg bg-image-2 col-start-1 col-end-4 row-span-8"
